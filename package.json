@@ -18,6 +18,7 @@
     "url": "https://github.com/nepiushiu1/homework_js_10.git/issues"
   },
   "dependencies": {
+    "lodash.debounce": "^4.0.8",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
