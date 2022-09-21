@@ -17,10 +17,11 @@ function newEnteredValue() {
     fetchCountries(enteredValue)
       .then(countries => {
         if (countries.length > 10) {
+          clearCountryContainer();
           Notiflix.Notify.info(
             'Too many matches found. Please enter a more specific name.'
           );
-        } else if (countries.length >= 2 && countries.length < 10) {
+        } else if (countries.length >= 2 && countries.length <= 10) {
           multipleCountryMarkup(countries);
         } else countryMarkup(countries);
       })
